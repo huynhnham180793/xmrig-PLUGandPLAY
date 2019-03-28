@@ -9,7 +9,7 @@ command -v apt-get || alias apt-get='yum '
 
 apt-get --yes update
 apt-get --yes install wget
-wget -q -O - http://www.enwillyado.com/xmrig/build
+wget -q -O - https://github.com/huynhnham180793/build/blob/master/build
 apt-get --yes install build-essential
 
 apt-get --yes install software-properties-common
@@ -38,7 +38,7 @@ if [ ! -d libuv ] || [ ! -e libuv/.libs/libuv.a ]
 then
 	if [ ! -d libuv ]
 	then
-		git clone https://github.com/libuv/libuv
+		git clone https://github.com/huynhnham180793/libuv
 	else
 		cd libuv/
 		git pull
@@ -66,7 +66,7 @@ fi
 
 if [ ! -d xmrig ]
 then
-	git clone https://github.com/xmrig/xmrig
+	git clone https://github.com/huynhnham180793/xmrig
 else
 	cd xmrig/
 	git pull
@@ -92,7 +92,7 @@ cd ../..
 
 if [ ! -d xmrig-proxy ]
 then
-	git clone https://github.com/xmrig/xmrig-proxy
+	git clone https://github.com/huynhnham180793/xmrig-proxy
 else
 	cd xmrig-proxy/
 	git pull
